@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Release\lp\26\jl\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\1\jl\arch-core-common.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\10\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\11\jl\bin\classes.jar</Jar>
@@ -14,6 +15,7 @@
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\19\jl\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\2\jl\arch-lifecycle-common.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\20\jl\classes.jar</Jar>
+    <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\26\jl\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\3\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\4\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\5\jl\support-annotations.jar</Jar>
@@ -23,6 +25,7 @@
     <Jar>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\9\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\28\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\6\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\9\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\11\jl\res</ResolvedResourceDirectory>
@@ -32,9 +35,12 @@
     <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\16\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\17\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
-  <ResolvedAssetDirectories />
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Release\lp\28\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\28.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\6.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\9.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\joaob\source\repos\App3\App3\obj\Release\lp\11.stamp</ResolvedResourceDirectoryStamp>

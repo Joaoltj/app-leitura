@@ -21,3 +21,12 @@ Xamarin.GooglePlayServices.Vision.Common
 Xamarin.GooglePlayServices.Vision
 Interop.TCPILib
 Interop.WMLSS
+Tesseract.Binding.Droid
+Tesseract
+Tesseract.Droid
+Microsoft.ProjectOxford.Vision
+Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.Media
+Plugin.Permissions
+System.Resources.ResourceManager

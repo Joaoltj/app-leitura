@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>20/08/2018 16:44:48</xs:documentation>
+    <xs:documentation>23/08/2018 17:19:24</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1606,6 +1606,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -1625,6 +1626,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -5364,6 +5366,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -5383,6 +5386,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -13215,6 +13219,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -13234,6 +13239,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -16630,6 +16636,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -16649,6 +16656,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -16738,6 +16746,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -16757,6 +16766,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -17818,6 +17828,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -17837,6 +17848,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -18464,6 +18476,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -18483,6 +18496,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -20122,6 +20136,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -20141,6 +20156,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -20584,6 +20600,7 @@
             <xs:enumeration value="@string/action_settings" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
+            <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
@@ -20603,6 +20620,7 @@
             <xs:enumeration value="@string/common_open_on_phone" />
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
+            <xs:enumeration value="@string/Hello" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />

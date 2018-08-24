@@ -2,6 +2,81 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "Glass.Ocr.Tesseract.English/1.0.1": {
+        "type": "package",
+        "build": {
+          "build/Glass.Ocr.Tesseract.English.targets": {}
+        }
+      },
+      "Microsoft.ProjectOxford.Vision/1.0.393": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "8.0.2"
+        },
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.ProjectOxford.Vision.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.ProjectOxford.Vision.dll": {}
+        }
+      },
+      "Newtonsoft.Json/8.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.CurrentActivity/2.1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid44/Plugin.CurrentActivity.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.CurrentActivity": "2.1.0.2",
+          "Xamarin.Android.Support.Compat": "25.4.0.2",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Plugin.Permissions.dll": {}
+        }
+      },
+      "Tesseract-OCR/1.0.4": {
+        "type": "package"
+      },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12",
+          "Xamarin.Android.Support.Core.Utils": "25.4.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Android.Arch.Core.Common/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -337,10 +412,192 @@
         "build": {
           "build/MonoAndroid80/Xamarin.GooglePlayServices.Vision.Common.targets": {}
         }
+      },
+      "Xamarin.Tesseract/0.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Tesseract.Binding.Droid.dll": {},
+          "lib/MonoAndroid10/Tesseract.Droid.dll": {},
+          "lib/MonoAndroid10/Tesseract.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Tesseract.Binding.Droid.dll": {},
+          "lib/MonoAndroid10/Tesseract.Droid.dll": {},
+          "lib/MonoAndroid10/Tesseract.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Glass.Ocr.Tesseract.English/1.0.1": {
+      "sha512": "JGV6/U35JqKLbMDzN0fbHTasC7ElI2sulak0tyVXlxVtwEABBDg/BcGmVM/YvUz+QtguQ1mfjF0RkBTKUN8tng==",
+      "type": "package",
+      "path": "glass.ocr.tesseract.english/1.0.1",
+      "files": [
+        "build/Glass.Ocr.Tesseract.English.targets",
+        "build/tessdata/eng.cube.bigrams",
+        "build/tessdata/eng.cube.fold",
+        "build/tessdata/eng.cube.lm",
+        "build/tessdata/eng.cube.nn",
+        "build/tessdata/eng.cube.params",
+        "build/tessdata/eng.cube.size",
+        "build/tessdata/eng.cube.word-freq",
+        "build/tessdata/eng.tesseract_cube.nn",
+        "build/tessdata/eng.traineddata",
+        "glass.ocr.tesseract.english.1.0.1.nupkg.sha512",
+        "glass.ocr.tesseract.english.nuspec"
+      ]
+    },
+    "Microsoft.ProjectOxford.Vision/1.0.393": {
+      "sha512": "rMRqJ3ZZyJ6LsusERUUdDKKWVTnJVvb9vIwgBmRXBF9vr7XMiOFKVulIwlQzVcI1pKRnx6ne5+gcdXm9RoaAQg==",
+      "type": "package",
+      "path": "microsoft.projectoxford.vision/1.0.393",
+      "files": [
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.ProjectOxford.Vision.dll",
+        "microsoft.projectoxford.vision.1.0.393.nupkg.sha512",
+        "microsoft.projectoxford.vision.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/8.0.2": {
+      "sha512": "e5yWmEfu68rmtG431zl9N/7PlNKQDIuiDW5MHlEFAZcecakcxrIGnKqrPAtWNILzK2oNanRB5cD150MYhECK3g==",
+      "type": "package",
+      "path": "newtonsoft.json/8.0.2",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "newtonsoft.json.8.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Plugin.CurrentActivity/2.1.0.2": {
+      "sha512": "uiMbA0G1ulSEj7MtGUQDDhzw80+QgvH5ts+Yt9cyft1dF4Eb0tYxiXAgNPuohJXpxhZmRs+6ZjL6QBaL/wUKDQ==",
+      "type": "package",
+      "path": "plugin.currentactivity/2.1.0.2",
+      "files": [
+        "lib/monoandroid44/Plugin.CurrentActivity.dll",
+        "lib/monoandroid44/Plugin.CurrentActivity.xml",
+        "plugin.currentactivity.2.1.0.2.nupkg.sha512",
+        "plugin.currentactivity.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "type": "package",
+      "path": "plugin.permissions/3.0.0.12",
+      "files": [
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Tesseract-OCR/1.0.4": {
+      "sha512": "dXjJw1+0PW1fvkxw8ZnCQiwQWUMruHH1EVOYeM27IXQL4ruNquVFJQncGhIe1UxaxH7gTDw806USKK7Jx+XtGg==",
+      "type": "package",
+      "path": "tesseract-ocr/1.0.4",
+      "files": [
+        "content/Tesseract-OCR/ambiguous_words.exe",
+        "content/Tesseract-OCR/classifier_tester.exe",
+        "content/Tesseract-OCR/cntraining.exe",
+        "content/Tesseract-OCR/combine_tessdata.exe",
+        "content/Tesseract-OCR/dawg2wordlist.exe",
+        "content/Tesseract-OCR/doc/AUTHORS",
+        "content/Tesseract-OCR/doc/COPYING",
+        "content/Tesseract-OCR/doc/README",
+        "content/Tesseract-OCR/doc/ReleaseNotes",
+        "content/Tesseract-OCR/doc/eurotext.tif",
+        "content/Tesseract-OCR/doc/phototest.tif",
+        "content/Tesseract-OCR/java/ScrollView.jar",
+        "content/Tesseract-OCR/mftraining.exe",
+        "content/Tesseract-OCR/output/ocr_output_buffer.txt",
+        "content/Tesseract-OCR/shapeclustering.exe",
+        "content/Tesseract-OCR/tessdata/chi_sim.traineddata",
+        "content/Tesseract-OCR/tessdata/configs/ambigs.train",
+        "content/Tesseract-OCR/tessdata/configs/api_config",
+        "content/Tesseract-OCR/tessdata/configs/bigram",
+        "content/Tesseract-OCR/tessdata/configs/box.train",
+        "content/Tesseract-OCR/tessdata/configs/box.train.stderr",
+        "content/Tesseract-OCR/tessdata/configs/digits",
+        "content/Tesseract-OCR/tessdata/configs/hocr",
+        "content/Tesseract-OCR/tessdata/configs/inter",
+        "content/Tesseract-OCR/tessdata/configs/kannada",
+        "content/Tesseract-OCR/tessdata/configs/linebox",
+        "content/Tesseract-OCR/tessdata/configs/logfile",
+        "content/Tesseract-OCR/tessdata/configs/makebox",
+        "content/Tesseract-OCR/tessdata/configs/quiet",
+        "content/Tesseract-OCR/tessdata/configs/rebox",
+        "content/Tesseract-OCR/tessdata/configs/strokewidth",
+        "content/Tesseract-OCR/tessdata/configs/unlv",
+        "content/Tesseract-OCR/tessdata/eng.cube.bigrams",
+        "content/Tesseract-OCR/tessdata/eng.cube.fold",
+        "content/Tesseract-OCR/tessdata/eng.cube.lm",
+        "content/Tesseract-OCR/tessdata/eng.cube.lm_",
+        "content/Tesseract-OCR/tessdata/eng.cube.nn",
+        "content/Tesseract-OCR/tessdata/eng.cube.params",
+        "content/Tesseract-OCR/tessdata/eng.cube.size",
+        "content/Tesseract-OCR/tessdata/eng.cube.word-freq",
+        "content/Tesseract-OCR/tessdata/eng.tesseract_cube.nn",
+        "content/Tesseract-OCR/tessdata/eng.traineddata",
+        "content/Tesseract-OCR/tessdata/tessconfigs/batch",
+        "content/Tesseract-OCR/tessdata/tessconfigs/batch.nochop",
+        "content/Tesseract-OCR/tessdata/tessconfigs/matdemo",
+        "content/Tesseract-OCR/tessdata/tessconfigs/msdemo",
+        "content/Tesseract-OCR/tessdata/tessconfigs/nobatch",
+        "content/Tesseract-OCR/tessdata/tessconfigs/segdemo",
+        "content/Tesseract-OCR/tesseract.exe",
+        "content/Tesseract-OCR/unicharset_extractor.exe",
+        "content/Tesseract-OCR/wordlist2dawg.exe",
+        "tesseract-ocr.1.0.4.nupkg.sha512",
+        "tesseract-ocr.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "type": "package",
+      "path": "xam.plugin.media/4.0.1.5",
+      "files": [
+        "lib/monoandroid71/Plugin.Media.dll",
+        "lib/monoandroid71/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.10240/Plugin.Media.dll",
+        "lib/uap10.0.10240/Plugin.Media.pri",
+        "lib/uap10.0.10240/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.4.0.1.5.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xamarin.Android.Arch.Core.Common/1.0.0": {
       "sha512": "lBtubYSL6gKvHgg2ztIE3sg+kbR5/A/T5xXPaKSVWvYbMcjAUO8qwSyiAcvKS+caqraDOEDj0U3tocUmztgvhw==",
       "type": "package",
@@ -600,12 +857,33 @@
         "xamarin.googleplayservices.vision.common.60.1142.1.nupkg.sha512",
         "xamarin.googleplayservices.vision.common.nuspec"
       ]
+    },
+    "Xamarin.Tesseract/0.3.4": {
+      "sha512": "XpOyKrgytYgAONE7DJU0pR2Zksn7xw1eLP3W4h2dkyCE3WlXHPCpJWYYmLK84aYuSq/QpLrAR4KDm0R3jhAjSA==",
+      "type": "package",
+      "path": "xamarin.tesseract/0.3.4",
+      "files": [
+        "lib/MonoAndroid10/Tesseract.Binding.Droid.dll",
+        "lib/MonoAndroid10/Tesseract.Droid.dll",
+        "lib/MonoAndroid10/Tesseract.dll",
+        "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll",
+        "lib/Xamarin.iOS10/Tesseract.dll",
+        "lib/Xamarin.iOS10/Tesseract.iOS.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Tesseract.dll",
+        "xamarin.tesseract.0.3.4.nupkg.sha512",
+        "xamarin.tesseract.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "Glass.Ocr.Tesseract.English >= 1.0.1",
+      "Microsoft.ProjectOxford.Vision >= 1.0.393",
+      "Tesseract-OCR >= 1.0.4",
+      "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Android.Support.Design >= 27.0.2",
-      "Xamarin.GooglePlayServices.Vision >= 60.1142.1"
+      "Xamarin.GooglePlayServices.Vision >= 60.1142.1",
+      "Xamarin.Tesseract >= 0.3.4"
     ]
   },
   "packageFolders": {
@@ -641,6 +919,22 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Glass.Ocr.Tesseract.English": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "Microsoft.ProjectOxford.Vision": {
+            "target": "Package",
+            "version": "[1.0.393, )"
+          },
+          "Tesseract-OCR": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[4.0.1.5, )"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2, )"
@@ -648,6 +942,10 @@
           "Xamarin.GooglePlayServices.Vision": {
             "target": "Package",
             "version": "[60.1142.1, )"
+          },
+          "Xamarin.Tesseract": {
+            "target": "Package",
+            "version": "[0.3.4, )"
           }
         }
       }

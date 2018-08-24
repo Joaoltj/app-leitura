@@ -25,5 +25,6 @@
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.v7.appcompat\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.v7.appcompat\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.transition\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.transition\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.design\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Design.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.design\27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Design.targets')" />
+    <Import Project="$(NuGetPackageRoot)glass.ocr.tesseract.english\1.0.1\build\Glass.Ocr.Tesseract.English.targets" Condition="Exists('$(NuGetPackageRoot)glass.ocr.tesseract.english\1.0.1\build\Glass.Ocr.Tesseract.English.targets')" />
   </ImportGroup>
 </Project>

@@ -19,3 +19,13 @@ Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
 Xamarin.GooglePlayServices.Vision.Common
 Xamarin.GooglePlayServices.Vision
+Microsoft.ProjectOxford.Vision
+Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.Media
+Plugin.Permissions
+Tesseract.Binding.Droid
+Tesseract
+Tesseract.Droid
+Interop.TCPILib
+Interop.WMLSS

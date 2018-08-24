@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Com.Googlecode.Tesseract.Android;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Gms.Vision;
@@ -17,23 +18,26 @@ using Android.Support.V4.Content;
 using System;
 using Android.Content;
 using Android.Provider;
-using System.Threading.Tasks;
+
+using Tesseract;
+using Tesseract.Droid;
 
 namespace App3
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity
     {
-
-
+        
+      
         private TextView txtView;
-
+        private Android.Net.Uri uri; 
         private const int RequestCameraPermission = 13;
-        private Button btn, btnCamera;
+        private Button btn, btnCamera,btnGo;
         private TextView txt;
         private ImageView imgView;
         Bitmap bitmap = null;
         TextRecognizer textRecognizer;
+        
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
@@ -51,9 +55,11 @@ namespace App3
 
         }
 
-
+       
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            
+         
 
 
             base.OnCreate(savedInstanceState);
@@ -68,8 +74,16 @@ namespace App3
             btn = FindViewById<Button>(Resource.Id.btn);
             btnCamera = FindViewById<Button>(Resource.Id.btnFoto);
             btnCamera.Click += Btn_Click;
+                
+  
             textRecognizer = new TextRecognizer.Builder(ApplicationContext).Build();
             btn.Click += Ler;
+            btnGo = FindViewById<Button>(Resource.Id.btnGo);
+            btnGo.Click += delegate
+            {
+                var intent = new Intent(this,typeof(Leitura));
+                StartActivity(intent);
+            };
 
       
 
@@ -80,7 +94,7 @@ namespace App3
 
         private void Ler(object sender, EventArgs e)
         {
-            OrcEngine
+            
             if (bitmap != null)
             {
                 if (!textRecognizer.IsOperational)
@@ -106,19 +120,64 @@ namespace App3
         }
            
 
-        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Android.App.Result resultCode, Intent data)
         {
+
+            if (requestCode == 1)
+            {
+                bitmap = (Bitmap)data.Extras.Get("data");
+                //uri = data.Data;
+               imgView.SetImageBitmap(bitmap);
+                //cropImagem();
+            }
+            else
+            {
+                if (data != null)
+                {
+                    bitmap = (Bitmap)data.Extras.Get("data");
+                    imgView.SetImageBitmap(bitmap);
+                   
+                }
+
+            }
             base.OnActivityResult(requestCode, resultCode, data);
-            bitmap = (Bitmap)data.Extras.Get("data");
-            imgView.SetImageBitmap(bitmap);
+          
         }
 
         private void Btn_Click(object sender, EventArgs e)
         {
+
+            //abri galeria
+            /*Intent intent = new Intent();
+           intent.SetAction(Intent.ActionGetContent);
+           intent.SetType("image/*");
+           StartActivityForResult(intent, 1);*/
+
             Intent intent = new Intent(MediaStore.ActionImageCapture);
-            StartActivityForResult(intent, 0);
+           StartActivityForResult(intent, 0); 
         }
 
+        public void cropImagem()
+        {
+
+            Intent intent = new Intent("com.android.camera.action.CROP");
+
+            intent.SetDataAndType(uri, "image/*");
+            intent.PutExtra("crop", "true");
+            intent.PutExtra("outputX", 180);
+            intent.PutExtra("outputY", 180);
+            intent.PutExtra("aspectX", 3);
+            intent.PutExtra("aspectY", 4);
+            intent.PutExtra("scaleUpIfNeeded", true);
+            intent.PutExtra("return-data", true);
+            StartActivityForResult(intent, 0);
+
+
+        }
     }
+
+
+
+  
 }
 

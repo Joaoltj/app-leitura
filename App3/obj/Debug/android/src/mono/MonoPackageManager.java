@@ -107,6 +107,14 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "App3.dll" comes first in this list. */
 		"App3.dll",
+		"Microsoft.ProjectOxford.Vision.dll",
+		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Media.dll",
+		"Plugin.Permissions.dll",
+		"Tesseract.Binding.Droid.dll",
+		"Tesseract.dll",
+		"Tesseract.Droid.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",
@@ -127,6 +135,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Tasks.dll",
 		"Xamarin.GooglePlayServices.Vision.Common.dll",
 		"Xamarin.GooglePlayServices.Vision.dll",
+		"Interop.TCPILib.dll",
+		"Interop.WMLSS.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

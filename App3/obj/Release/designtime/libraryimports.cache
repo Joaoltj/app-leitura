@@ -42,6 +42,7 @@
     <Jar>obj\Release\lp\19\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\2\jl\arch-lifecycle-common.jar</Jar>
     <Jar>obj\Release\lp\20\jl\classes.jar</Jar>
+    <Jar>obj\Release\lp\26\jl\classes.jar</Jar>
     <Jar>obj\Release\lp\3\jl\bin\classes.jar</Jar>
     <Jar>obj\Release\lp\4\jl\bin\classes.jar</Jar>
     <Jar>obj\Release\lp\5\jl\support-annotations.jar</Jar>
